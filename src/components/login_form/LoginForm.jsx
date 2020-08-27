@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, Input, Button, Checkbox, Form } from "antd";
 import Logo from "../../logo.svg";
 import "./LoginForm.scss";
 import "antd/dist/antd.css";
 
 const LoginForm = () => {
-  const onFinish = () => {
-    alert("thanks for coding challenge");
-  };
   return (
     <div className="Login-Container">
       <Card className="Card-Container" style={{ width: 320 }}>
@@ -25,18 +22,24 @@ const LoginForm = () => {
           initialValues={{
             remember: true,
           }}
-          onFinish={onFinish}
         >
           <Form.Item className="Login-Email" label="Email Address">
-            <Input />
+            <Input type="email" required />
           </Form.Item>
 
-          <Form.Item name="remember" valuePropName="checked" noStyle>
+          <Form.Item
+            name="remember"
+            className="Login-Remember"
+            valuePropName="checked"
+            noStyle
+          >
             <Checkbox>Remember this device</Checkbox>
           </Form.Item>
 
           <Form.Item className="Login-Button">
-            <Button type="primary">Sign In</Button>
+            <Button type="primary" htmlType="submit">
+              Sign In
+            </Button>
           </Form.Item>
         </Form>
       </Card>
