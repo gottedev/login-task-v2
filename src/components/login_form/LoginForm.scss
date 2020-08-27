@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+
+.Login-Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.Card-Container {
+  display: flex;
+  flex-direction: column;
+  background: $bg-color-main;
+  box-shadow: $box-shadow;
+  .ant-card-body {
+    padding: 2rem 4rem;
+    .Logo-Container {
+      img {
+        width: 100px;
+      }
+      margin: 2rem 0rem;
+    }
+    .Title-Container {
+      color: $primary-color;
+      line-height: 1.3;
+      p {
+        font-size: 1.2rem;
+        color: $secondary-color;
+        font-weight: 560;
+      }
+      margin: 3rem 0rem;
+    }
+    .Login-Form {
+      .Login-Email {
+        margin-bottom: 1rem;
+        div {
+          padding: 0;
+        }
+      }
+      .Login-Button {
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+        .ant-btn-primary {
+          width: 10rem;
+          background: $bg-color-main;
+          color: $bg-black;
+          border-color: $secondary-color-varient2;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

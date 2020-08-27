@@ -1,9 +1,9 @@
 @import "variables.scss";
 
-@font-face {
-  font-family: "Gotham";
-  src: url(fonts/Gotham.ttf);
-}
+// @font-face {
+//   font-family: "Gotham";
+//   src: url(fonts/Gotham.ttf);
+// }
 
 html {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ html {
     margin: 0px;
   }
   body {
-    font-family: $font-family;
+    font-family: $font-family, serif;
     font-size: 1.6rem;
     line-height: 2;
     background: $bg-color;
