@@ -28,7 +28,7 @@ const LoginForm = () => {
           onFinish={onFinish}
         >
           <Form.Item className="Login-Email" label="Email Address">
-            <Input placeholder="Enter your Email Address" />
+            <Input />
           </Form.Item>
 
           <Form.Item name="remember" valuePropName="checked" noStyle>
