@@ -71,6 +71,10 @@
           height: 20px;
           border-radius: 0.4rem;
         }
+        .ant-checkbox-inner::after {
+          left: 5px;
+        }
+
         label {
           font-size: 1.6rem;
         }
