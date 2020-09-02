@@ -7,13 +7,13 @@ import "antd/dist/antd.css";
 const LoginForm = () => {
   return (
     <div className="Login-Container">
-      <Card className="Card-Container" style={{ width: 320 }}>
+      <Card className="Card-Container">
         <div className="Logo-Container">
           <img src={Logo} alt="Green Energy Logo" />
         </div>
         <div className="Title-Container">
           <h2>Example login screen</h2>
-          <p>&nbsp;Getting started with Green.</p>
+          <p>Getting started with Green.</p>
         </div>
         <Form
           layout="vertical"
@@ -33,7 +33,9 @@ const LoginForm = () => {
             valuePropName="checked"
             noStyle
           >
-            <Checkbox>Remember this device</Checkbox>
+            <Checkbox>
+              <label>Remember this device</label>
+            </Checkbox>
           </Form.Item>
 
           <Form.Item className="Login-Button">

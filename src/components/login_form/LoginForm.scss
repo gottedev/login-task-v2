@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
+  padding: 2rem;
 }
 
 .Card-Container {
@@ -13,11 +14,13 @@
   flex-direction: column;
   background: $bg-color-main;
   box-shadow: $box-shadow;
+  min-width: 300px;
+  width: 600px;
   .ant-card-body {
-    padding: 2rem 4rem;
+    padding: 3rem;
     .Logo-Container {
       img {
-        width: 100px;
+        height: 40px;
       }
       margin: 2rem 0rem;
     }
@@ -25,8 +28,13 @@
       color: $primary-color;
       line-height: 1.3;
       font-weight: bold;
+      h2 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: $primary-color;
+      }
       p {
-        font-size: 1.2rem;
+        font-size: 2rem;
         color: $secondary-color;
         font-weight: 560;
       }
@@ -39,23 +47,47 @@
           padding: 0;
         }
         label {
+          font-size: 2rem;
           color: $tertiary-color;
+        }
+        input {
+          margin: 0.4rem 0rem;
+          padding: $padding-main/3;
+          border: 0.1px solid $secondary-color-varient2;
+          border-radius: $border-radius;
         }
       }
       .ant-checkbox-wrapper {
-        span {
-          color: $tertiary-color;
+        margin: 0.4rem 0rem 0rem 0rem;
+        .ant-checkbox-checked::after {
+          transition: none;
+          animation: none;
+          -webkit-animation: none;
+          -moz-animation: none;
+          -o-animation: none;
+        }
+        .ant-checkbox-inner {
+          width: 20px;
+          height: 20px;
+          border-radius: 0.4rem;
+        }
+        label {
+          font-size: 1.6rem;
         }
       }
       .Login-Button {
-        margin-top: 3rem;
-        margin-bottom: 0rem;
+        margin-top: 3.2rem;
+        margin-bottom: 1rem;
         .ant-btn-primary {
+          box-shadow: none;
           width: 10rem;
           background: $bg-color-main;
           color: $tertiary-color;
           border-color: $secondary-color-varient2;
           border-radius: 0.5rem;
+          span {
+            color: #000;
+          }
         }
       }
     }
